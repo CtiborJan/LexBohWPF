@@ -1,0 +1,21 @@
+﻿<Window x:Class="LexBohWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LexBohWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="652.941" Width="1065.966">
+    <Grid>
+        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="510" Margin="10,10,0,0" VerticalAlignment="Top" Width="285"/>
+        <RichTextBox x:Name="rtf" HorizontalAlignment="Left" Height="510" Margin="330,10,0,0" VerticalAlignment="Top" Width="700">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="cmdLoad" Content="Načíst" HorizontalAlignment="Left" Height="25" Margin="35,525,0,0" VerticalAlignment="Top" Width="235" Click="CmdLoad_Click"/>
+
+    </Grid>
+</Window>
